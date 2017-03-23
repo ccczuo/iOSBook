@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HypnosisViewController.h
 //  iOSBook
 //
 //  Created by 楚晨晨 on 2017/3/22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HypnosisViewController : UIViewController
 
 @end
-
