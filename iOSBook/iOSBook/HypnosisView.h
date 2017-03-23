@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HypnosisView : UIView
-
+-(instancetype)initWithFrame:(CGRect)frame;
 @end

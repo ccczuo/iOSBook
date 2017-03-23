@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A06E84D1E8363350033F791 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A06E84C1E8363350033F791 /* UserNotifications.framework */; };
 		4A541F981E82791900C1D318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541F971E82791900C1D318 /* main.m */; };
 		4A541F9B1E82791900C1D318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541F9A1E82791900C1D318 /* AppDelegate.m */; };
-		4A541F9E1E82791900C1D318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541F9D1E82791900C1D318 /* ViewController.m */; };
 		4A541FA11E82791900C1D318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A541F9F1E82791900C1D318 /* Main.storyboard */; };
 		4A541FA31E82791900C1D318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A541FA21E82791900C1D318 /* Assets.xcassets */; };
 		4A541FA61E82791900C1D318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A541FA41E82791900C1D318 /* LaunchScreen.storyboard */; };
+		4A541FAF1E82799900C1D318 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541FAE1E82799900C1D318 /* HypnosisView.m */; };
+		4A541FB21E827AD500C1D318 /* HypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541FB11E827AD500C1D318 /* HypnosisViewController.m */; };
+		4A541FB51E827AE900C1D318 /* RemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541FB41E827AE900C1D318 /* RemindViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A06E84C1E8363350033F791 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4A541F931E82791900C1D318 /* iOSBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A541F971E82791900C1D318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A541F991E82791900C1D318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4A541F9A1E82791900C1D318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4A541F9C1E82791900C1D318 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4A541F9D1E82791900C1D318 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4A541FA01E82791900C1D318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A541FA21E82791900C1D318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A541FA51E82791900C1D318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A541FA71E82791900C1D318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A541FAD1E82799900C1D318 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		4A541FAE1E82799900C1D318 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
+		4A541FB01E827AD500C1D318 /* HypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisViewController.h; sourceTree = "<group>"; };
+		4A541FB11E827AD500C1D318 /* HypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisViewController.m; sourceTree = "<group>"; };
+		4A541FB31E827AE900C1D318 /* RemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindViewController.h; sourceTree = "<group>"; };
+		4A541FB41E827AE900C1D318 /* RemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A06E84D1E8363350033F791 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A06E84B1E8363350033F791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A06E84C1E8363350033F791 /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A541F8A1E82791900C1D318 = {
 			isa = PBXGroup;
 			children = (
 				4A541F951E82791900C1D318 /* iOSBook */,
 				4A541F941E82791900C1D318 /* Products */,
+				4A06E84B1E8363350033F791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,12 @@
 			children = (
 				4A541F991E82791900C1D318 /* AppDelegate.h */,
 				4A541F9A1E82791900C1D318 /* AppDelegate.m */,
-				4A541F9C1E82791900C1D318 /* ViewController.h */,
-				4A541F9D1E82791900C1D318 /* ViewController.m */,
+				4A541FB31E827AE900C1D318 /* RemindViewController.h */,
+				4A541FB41E827AE900C1D318 /* RemindViewController.m */,
+				4A541FB01E827AD500C1D318 /* HypnosisViewController.h */,
+				4A541FB11E827AD500C1D318 /* HypnosisViewController.m */,
+				4A541FAD1E82799900C1D318 /* HypnosisView.h */,
+				4A541FAE1E82799900C1D318 /* HypnosisView.m */,
 				4A541F9F1E82791900C1D318 /* Main.storyboard */,
 				4A541FA21E82791900C1D318 /* Assets.xcassets */,
 				4A541FA41E82791900C1D318 /* LaunchScreen.storyboard */,
@@ -150,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A541F9E1E82791900C1D318 /* ViewController.m in Sources */,
+				4A541FB51E827AE900C1D318 /* RemindViewController.m in Sources */,
+				4A541FAF1E82799900C1D318 /* HypnosisView.m in Sources */,
 				4A541F9B1E82791900C1D318 /* AppDelegate.m in Sources */,
 				4A541F981E82791900C1D318 /* main.m in Sources */,
+				4A541FB21E827AD500C1D318 /* HypnosisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +331,7 @@
 				4A541FAC1E82791900C1D318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
