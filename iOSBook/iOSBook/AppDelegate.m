@@ -22,7 +22,8 @@
     return YES;
 }
 
-
+-(void)test{
+}
 - (void)demo{
     
 }
