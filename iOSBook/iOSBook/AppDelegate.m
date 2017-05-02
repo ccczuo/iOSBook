@@ -16,16 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    [[UIApplication sharedApplication] registerForRemoteNotifications];    
     
     // Override point for customization after application launch.
     return YES;

@@ -151,6 +151,7 @@
 				TargetAttributes = {
 					4A541F921E82791900C1D318 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C2SV4YJGZ8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -362,6 +363,7 @@
 			baseConfigurationReference = E575E34EE260D324BE601F0B /* Pods-iOSBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2SV4YJGZ8;
 				INFOPLIST_FILE = iOSBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ccc.iOSBook;
@@ -374,6 +376,7 @@
 			baseConfigurationReference = 4D6255D3DC063FBCEFF53CE5 /* Pods-iOSBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2SV4YJGZ8;
 				INFOPLIST_FILE = iOSBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ccc.iOSBook;
