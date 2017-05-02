@@ -16,6 +16,7 @@
 		4A541FAF1E82799900C1D318 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541FAE1E82799900C1D318 /* HypnosisView.m */; };
 		4A541FB21E827AD500C1D318 /* HypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541FB11E827AD500C1D318 /* HypnosisViewController.m */; };
 		4A541FB51E827AE900C1D318 /* RemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A541FB41E827AE900C1D318 /* RemindViewController.m */; };
+		CF9EF84F46A97943C14DDF0C /* libPods-iOSBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D9318FA617380AB8E39C26 /* libPods-iOSBook.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		4A541FB11E827AD500C1D318 /* HypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisViewController.m; sourceTree = "<group>"; };
 		4A541FB31E827AE900C1D318 /* RemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindViewController.h; sourceTree = "<group>"; };
 		4A541FB41E827AE900C1D318 /* RemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindViewController.m; sourceTree = "<group>"; };
+		4D6255D3DC063FBCEFF53CE5 /* Pods-iOSBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBook/Pods-iOSBook.release.xcconfig"; sourceTree = "<group>"; };
+		84D9318FA617380AB8E39C26 /* libPods-iOSBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E575E34EE260D324BE601F0B /* Pods-iOSBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBook/Pods-iOSBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A06E84D1E8363350033F791 /* UserNotifications.framework in Frameworks */,
+				CF9EF84F46A97943C14DDF0C /* libPods-iOSBook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				4A06E84C1E8363350033F791 /* UserNotifications.framework */,
+				84D9318FA617380AB8E39C26 /* libPods-iOSBook.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -62,6 +68,7 @@
 				4A541F951E82791900C1D318 /* iOSBook */,
 				4A541F941E82791900C1D318 /* Products */,
 				4A06E84B1E8363350033F791 /* Frameworks */,
+				EA96107068EF22F4974D7CE2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +108,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EA96107068EF22F4974D7CE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E575E34EE260D324BE601F0B /* Pods-iOSBook.debug.xcconfig */,
+				4D6255D3DC063FBCEFF53CE5 /* Pods-iOSBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A541FAA1E82791900C1D318 /* Build configuration list for PBXNativeTarget "iOSBook" */;
 			buildPhases = (
+				A409BE5AB3B63A332D232ADF /* 📦 Check Pods Manifest.lock */,
 				4A541F8F1E82791900C1D318 /* Sources */,
 				4A541F901E82791900C1D318 /* Frameworks */,
 				4A541F911E82791900C1D318 /* Resources */,
+				28A0EF3FB9FA5840FE9D91B0 /* 📦 Embed Pods Frameworks */,
+				B646C3C419DD02E33326EE96 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,6 +185,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28A0EF3FB9FA5840FE9D91B0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSBook/Pods-iOSBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A409BE5AB3B63A332D232ADF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B646C3C419DD02E33326EE96 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSBook/Pods-iOSBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A541F8F1E82791900C1D318 /* Sources */ = {
@@ -292,6 +359,7 @@
 		};
 		4A541FAB1E82791900C1D318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E575E34EE260D324BE601F0B /* Pods-iOSBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSBook/Info.plist;
@@ -303,6 +371,7 @@
 		};
 		4A541FAC1E82791900C1D318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6255D3DC063FBCEFF53CE5 /* Pods-iOSBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSBook/Info.plist;
